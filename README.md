@@ -39,5 +39,6 @@ site-maquinas/
 
 ## 👨‍💻 Autor
 
-DevClub | Programação
+Canal DevClub | Programação
+
 modificado por: Matheus Daniel Santos de Lima  
