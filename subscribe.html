@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscreva-se | Teteu Imports</title>
+    <link rel="stylesheet" href="subscribe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    
+    <header>
+        <img src="./img/logo.png" alt="logo fp">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="carros.html">Carros</a></li>
+                <li><a href="subscribe.html">Novidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="subscribe-container">
+        <div class="content-box">
+            <h2>Receba Novidades Exclusivas</h2>
+            <p>Cadastre seu e-mail e personalize o tipo de conteúdo que deseja receber. Promoções, novos modelos e muito mais da Teteu Imports.</p>
+
+            <form id="subscribeForm">
+
+                <!-- CAMPO DE E-MAIL -->
+                <label for="email">Seu e-mail:</label>
+                <input type="email" id="email" placeholder="exemplo@gmail.com" required>
+
+                <!-- PREFERÊNCIA DE CARROS -->
+                <label for="carros">Quais carros você gosta?</label>
+                <select id="carros">
+                    <option value="Porsche">Porsche</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Lamborghini">Lamborghini</option>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="Audi">Audi</option>
+                </select>
+
+                <!-- ESCOLHA DO TIPO DE NOTIFICAÇÃO -->
+                <label>O que você quer receber?</label>
+                <div class="radios">
+                    <label><input type="radio" name="tipo" value="promo" checked> Promoções</label>
+                    <label><input type="radio" name="tipo" value="novos"> Novos modelos</label>
+                    <label><input type="radio" name="tipo" value="ambos"> Ambos</label>
+                </div>
+
+                <!-- BOTÃO -->
+                <button type="submit" class="btn-enviar">Cadastrar</button>
+            </form>
+
+            <!-- MENSAGEM ANIMADA -->
+            <p id="msgSuccess" class="msg-success"></p>
+
+        </div>
+    </section>
+
+    <script src="subscribe.js"></script>
+</body>
+</html>
